@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgtound_png"
+
+    tools:context=".complaint_register">
+    <LinearLayout
+        android:id="@+id/image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:visibility="gone"
+        android:animateLayoutChanges="true"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_gravity="center"
+            android:src="@drawable/no_preview_img"
+            android:background="@drawable/card_bg"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_bg"
+            android:layout_gravity="center"
+            android:text=" Select an image"
+            android:fontFamily="@font/baloo"
+            android:textSize="15dp"
+            android:onClick="uploadImage"
+            android:layout_marginBottom="20dp"
+            android:drawableLeft="@drawable/ic_image_black_24dp"
+            android:padding="15dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"/>
+
+
+
+                <Button
+                    android:id="@+id/next"
+                    android:onClick="next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#fff"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:fontFamily="@font/baloo"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_background"
+                    android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+                    android:text="proceed"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/problem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="7dp">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/RelativeLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/baloo"
+                android:background="@drawable/card_bg"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_navigate_before_black_24dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="back"
+
+                android:padding="15dp"
+                android:text="previuos" />
+
+            <ImageView
+                android:id="@+id/small_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/edittext_background"
+                android:src="@drawable/no_preview_img" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:text="Define your problem"
+            android:fontFamily="@font/baloo"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/prblm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_bg"
+            android:gravity="top|left"
+            android:fontFamily="@font/baloo"
+            android:hint="Add description to your complaint"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:minLines="4"
+            android:padding="15dp"
+            android:scrollbars="vertical" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/baloo"
+            android:text="Your location"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:text="recenter"
+                android:drawableLeft="@drawable/ic_location_on_black_24dp"
+
+                android:onClick="recenter_loc"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:layout_margin="2dp"
+            android:background="@drawable/card_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="please wait.."
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:onClick="locations_fun"
+            android:text="If not your location, click here"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="25dp"
+            android:text="Select department"
+            android:fontFamily="@font/baloo"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/selection_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_bg"
+            android:entries="@array/dept_array"
+            android:gravity="center"
+            android:padding="15dp"
+            android:prompt="@string/spinner_prompt"
+            tools:listitem="@android:layout/simple_spinner_item" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/myProgressButton"
+            layout="@layout/loading_btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

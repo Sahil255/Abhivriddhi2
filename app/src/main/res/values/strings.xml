@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Abhivriddi app</string>
+
+    <string name="spinner_prompt">Choose an item</string>
+    <string name="selection_header">Selection Spinner</string>
+
+    <string-array  name="dept_array">
+        <item >Electric</item>
+        <item >civil</item>
+        <item>Other</item>
+
+    </string-array>
+    <string name="title_activity_maps_complaints">Map</string>
+
+</resources>
+

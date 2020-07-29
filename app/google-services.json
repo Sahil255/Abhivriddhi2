@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "837085730113",
+    "firebase_url": "https://abhivriddi20.firebaseio.com",
+    "project_id": "abhivriddi20",
+    "storage_bucket": "abhivriddi20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837085730113:android:f65427402a9e0cc9b27dc0",
+        "android_client_info": {
+          "package_name": "com.example.abhivriddi20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837085730113-0u8afdpj7p079ke5j6v2dtg5quolms7o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.abhivriddi20",
+            "certificate_hash": "43a8b056ab8157c3e6358f2cd4673d2b81d88d51"
+          }
+        },
+        {
+          "client_id": "837085730113-ub3h5f5m4tepnrce18rlll846p1s7a6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbBS4qLfFU6VyU1AcG1fphe3eP6RO9NU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837085730113-ub3h5f5m4tepnrce18rlll846p1s7a6j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

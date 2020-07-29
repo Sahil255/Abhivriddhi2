@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/card_bg"
+        android:padding="20dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/cid_Textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CID-795464521123"
+                    android:paddingLeft="16dp"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:fontFamily="@font/baloo"
+                    />
+
+                <TextView
+                    android:id="@+id/byusername_Textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="by +917996757429"
+                    android:textSize="16dp"
+                    android:gravity="center_vertical"
+                    android:paddingTop="4dp"
+                    android:paddingRight="15dp"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+            <TextView
+                android:id="@+id/problem_Textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:text="Problem description"
+                android:textAlignment="textStart"
+                android:textSize="15dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:src="@drawable/no_preview_img"
+
+
+                />
+            <TextView
+                android:id="@+id/address_TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="location"
+                android:paddingLeft="15dp"
+                android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                android:paddingBottom="3dp"/>
+            <TextView
+                android:id="@+id/dept_Textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="dept:Electric dept."
+                android:paddingLeft="15dp"
+                android:paddingBottom="3dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/reg_date_Textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="registered on 19 dec 2020"
+                android:paddingLeft="15dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/status_Textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="status:Registered"
+                    android:fontFamily="@font/paytoneoneregular"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="16dp"
+                    android:textSize="17dp"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:id="@+id/updateDate_Textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(12 12 2020)"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/remark_Textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Remarks"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:textSize="17dp"
+                android:layout_margin="5dp"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

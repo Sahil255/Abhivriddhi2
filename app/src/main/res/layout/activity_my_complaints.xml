@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:id="@+id/MainLayout"
+    android:theme="@style/ThemeOverlay.AppCompat"
+    android:background="@drawable/theme_gridient_bg"
+    tools:context=".my_complaints">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ABHIVRIDDI"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:fontFamily="@font/baloo"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        />
+
+    <EditText
+        android:id="@+id/searchText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="search anything, start typing"
+        android:drawableLeft="@drawable/ic_search_black_24dp"
+        android:background="@drawable/searchbar_bg"
+        android:textSize="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:padding="12dp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/list_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please wait.."
+        android:textColor="#fff"
+        android:gravity="center"
+        android:fontFamily="@font/paytoneoneregular"
+        android:textSize="16dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        >
+
+        <CheckBox
+            android:id="@+id/unsolved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="unsolved"
+            android:textColorHint="#FFFFFF"
+            android:buttonTint="#fff"
+            android:onClick="solved_btn"
+            android:layout_marginRight="50dp"
+            android:padding="5dp"
+          />
+        <CheckBox
+            android:id="@+id/solved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="solved"
+            android:onClick="solved_btn"
+            android:textColorHint="#fff"
+            android:buttonTint="#fff"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recylcerView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+
+        />
+
+</LinearLayout>
